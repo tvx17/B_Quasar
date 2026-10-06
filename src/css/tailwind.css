@@ -1,0 +1,7 @@
+/* Keep Quasar's global styles: no Tailwind Preflight and no unprefixed utilities.
+ * Use tw:flex, tw:p-4, tw:md:grid-cols-2, etc. on your own layout elements.
+ * Avoid competing Quasar and Tailwind utilities for the same CSS property.
+ */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme) prefix(tw);
+@import "tailwindcss/utilities.css" layer(utilities) prefix(tw);
